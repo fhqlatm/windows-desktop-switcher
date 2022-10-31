@@ -134,6 +134,24 @@ switchDesktopByNumber(targetDesktop)
 }
 
 ;
+; This function validates the target desktop number
+;
+validateTargetDesktop(targetDesktop)
+{
+    global DesktopCount
+
+    if (targetDesktop > DesktopCount) {
+        targetDesktop -= DesktopCount
+    }
+
+    if (targetDesktop < 1) {
+        targetDesktop += DesktopCount
+    }
+
+    return targetDesktop
+}
+
+;
 ; This function creates a new virtual desktop and switches to it
 ;
 createVirtualDesktop()
@@ -172,7 +190,7 @@ OutputDebug, [loading] desktops: %DesktopCount% current: %CurrentDesktop%
 #7::switchDesktopByNumber(7)
 #8::switchDesktopByNumber(8)
 #9::switchDesktopByNumber(9)
-#n::switchDesktopByNumber(CurrentDesktop + 1)
-#p::switchDesktopByNumber(CurrentDesktop - 1)
-#s::switchDesktopByNumber(CurrentDesktop + 1)
-#a::switchDesktopByNumber(CurrentDesktop - 1)
+#w::switchDesktopByNumber(validateTargetDesktop(CurrentDesktop + 1))
+#q::switchDesktopByNumber(validateTargetDesktop(CurrentDesktop - 1))
+;#s::switchDesktopByNumber(CurrentDesktop + 1)
+;#a::switchDesktopByNumber(CurrentDesktop - 1)

@@ -1,26 +1,23 @@
-### Quick note
-I wrote this as a quick evening script to solve my problem. If you're looking for something more robust & need more than this script can give you, check out:
-https://github.com/sdias/win-10-virtual-desktop-enhancer
-
-# windows-desktop-switcher
-An AutoHotKey script for Windows that lets a user change virtual desktops by pressing Win + &lt;num>. It also allows for creation/deletion of desktops by hotkey (see below).
-
-## Overview
-This script creates 'better' hotkeys for switching virtual desktops in windows 10. I built this to better mirror
-the mapping I use on linux (with dwm), and it's always annoyed me that Windows does not have better
-hotkey support for this feature (for instance, there's no way to go directly to a desktop by number).
+# 윈도우10 가상 데스크톱 전환
+본 스크립트는 윈도우10 가상 데스크톱 간의 전환을 용이하게 만들어주는 AutoHotKey 스크립트(.ahk)입니다.
 
 ## Installation
-Install AutoHotKey, then run the desktop_switcher.ahk script (open with AutoHotKey if prompted). I would recommend putting it in your startup folder and it'll be invoked on login.
+1. AutoHokKey ([link](https://www.autohotkey.com/)) 설치
 
-## Hotkeys
-        <Win> + <Num>      - Switches to virtual desktop "num".
-        <Win> + A or P     - Switch to virtual desktop on left
-        <Win> + S or N     - Switch to virtual desktop on right
+2. desktop_switcher.ahk 스크립트 실행
 
-To change the key mappings, modify the bottom of the script and reload. Be sure to read about the [symbols AutoHotKey uses](https://autohotkey.com/docs/Hotkeys.htm) for key mapping.
+3. (Optional) <Win> + R -> shell:startup 입력하여 시작프로그램 등록
 
-## Other
-To see debug messages, download [SysInternals DebugView](https://technet.microsoft.com/en-us/sysinternals/debugview).
+## Usage
+        <Win> + <Num> : <Num> 번호에 해당하는 가상 데스크톱으로 전환
+        <Win> + Q     : 이전 데스크톱으로 전환 (= <Ctrl> + <Win> + <←>)
+        <Win> + W     : 다음 데스크톱으로 전환 (= <Ctrl> + <Win> + <→>)
 
-Disclaimer: I've only tried this on my machine, and on Windows 10. Use at your own risk.
+이전 및 다음 데스크톱으로의 전환은 마지막 데스크톱이 처음 데스크톱과 이어져서 작동합니다.
+
+### Reference
+https://github.com/sdias/win-10-virtual-desktop-enhancer
+
+└ https://github.com/searene/windows-desktop-switcher
+
+더 많은 기능을 원하시거나 원본 스크립트를 참조하시려면 위 링크를 확인해주세요.

@@ -13,7 +13,7 @@
         <Win> + Q     : 이전 데스크톱으로 전환 (= <Ctrl> + <Win> + <←>)
         <Win> + W     : 다음 데스크톱으로 전환 (= <Ctrl> + <Win> + <→>)
 
-이전 및 다음 데스크톱으로의 전환은 마지막 데스크톱이 처음 데스크톱과 이어져서 작동합니다.
+이전 및 다음 데스크톱으로의 전환은 처음 데스크톱과 마지막 데스크톱과 맞닿은 것처럼 동작합니다.
 
 ### Reference
 https://github.com/sdias/win-10-virtual-desktop-enhancer

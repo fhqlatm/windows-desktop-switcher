@@ -1,5 +1,5 @@
 # 윈도우10 가상 데스크톱 전환
-본 스크립트는 윈도우10 가상 데스크톱 간의 전환을 용이하게 만들어주는 AutoHotKey 스크립트(.ahk)입니다.
+윈도우10 가상 데스크톱 간의 전환을 용이하게 만들어주는 AutoHotKey 스크립트(.ahk)입니다.
 
 ## Installation
 1. AutoHokKey ([link](https://www.autohotkey.com/)) 설치

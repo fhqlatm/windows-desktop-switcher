@@ -6,9 +6,9 @@ AutoHotKey script (.ahk) that allows switching between Windows 10 virtual deskto
 
 2. Download script ([link](https://github.com/fhqlatm/windows-desktop-switcher/releases/download/Latest/desktop_switcher.ahk)).
 
-3. Run desktop_switcher.ahk
+3. Run desktop_switcher.ahk.
 
-4. (Optional) Add the script to a startup program (<Win> + R / shell:startup)
+4. (Optional) Add the script to a startup program (\<Win\> + R + shell:startup).
 
 ## Usage
         <Win> + <Num> : Switch to the <Num> virtual desktop.
